@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EAF4F3"
+    tools:context=".QrScannerActivity">
+
+    <ImageView
+        android:id="@+id/headerLogoQR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        app:srcCompat="@drawable/caffeterialogo" />
+
+    <ImageView
+        android:id="@+id/headerAdressQR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/headerLogoQR"
+        android:adjustViewBounds="true"
+        android:contentDescription="TODO"
+        android:cropToPadding="false"
+        app:srcCompat="@drawable/headeraddres"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <TextView
+        android:id="@+id/textAdressQR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/headerAdressQR"
+        android:layout_alignBottom="@+id/headerAdressQR"
+        android:layout_centerInParent="true"
+        android:layout_margin="1dp"
+        android:text="@string/adress"
+        android:textColor="@android:color/white" />
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/camerapreview"
+        android:layout_centerInParent = "true"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="84dp"
+        android:text="@string/scanner_qr"
+        android:textColor="@android:color/black" />
+
+
+</RelativeLayout>

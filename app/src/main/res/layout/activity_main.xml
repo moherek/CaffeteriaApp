@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF4F3"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/headerLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        app:srcCompat="@drawable/caffeterialogo" />
+
+    <ImageView
+        android:id="@+id/headerAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLogo"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        app:srcCompat="@drawable/headeraddres" />
+
+    <TextView
+        android:id="@+id/textAdressMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/headerAdress"
+        android:layout_alignBottom="@+id/headerAdress"
+        android:layout_centerInParent="true"
+        android:layout_margin="1dp"
+        android:text="@string/adress"
+        android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:id="@+id/sticker5"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_alignTop="@+id/sticker4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sticker6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sticker3"
+            app:srcCompat="@drawable/emptysticker" />
+
+        <ImageView
+            android:id="@+id/sticker6"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_alignLeft="@+id/sticker3"
+            android:layout_alignStart="@+id/sticker3"
+            android:layout_alignTop="@+id/sticker4"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sticker5"
+            app:layout_constraintTop_toBottomOf="@+id/sticker4"
+            app:srcCompat="@drawable/emptysticker" />
+
+        <ImageView
+            android:id="@+id/sticker4"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_alignLeft="@+id/sticker1"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/sticker1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            app:layout_constraintBottom_toTopOf="@+id/sticker6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sticker3"
+            app:layout_constraintTop_toBottomOf="@+id/sticker2"
+            app:srcCompat="@drawable/emptysticker" />
+
+        <ImageView
+            android:id="@+id/sticker3"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/sticker1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            app:layout_constraintBottom_toTopOf="@+id/sticker5"
+            app:layout_constraintEnd_toStartOf="@+id/sticker4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sticker1"
+            app:srcCompat="@drawable/emptysticker" />
+
+        <ImageView
+            android:id="@+id/sticker2"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_alignTop="@+id/sticker1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            app:layout_constraintBottom_toTopOf="@+id/sticker4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sticker1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/emptysticker" />
+
+        <ImageView
+            android:id="@+id/sticker1"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            app:layout_constraintBottom_toTopOf="@+id/sticker3"
+            app:layout_constraintEnd_toStartOf="@+id/sticker2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/emptysticker" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonQrCameraStart"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/button_add"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="455dp" />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

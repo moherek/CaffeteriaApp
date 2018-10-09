@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Take a break Coffee</string>
+    <string name="button_add">Dodaj naklejkę</string>
+    <string name="button_collect">Odbierz darmową kawę</string>
+    <string name="adress">Take a Brake, Rynek główny 8, Oświęcim</string>
+    <string name="scanner_qr">Skieruj kamerę na promocyjny kod QR. Gdy kod zostanie wykryty poczujesz wibracje.</string>
+</resources>
